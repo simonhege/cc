@@ -55,7 +55,7 @@ func (s String) IntArray() []int {
 	return result
 }
 
-//IntArray convert the value into an array of ints
+//SingleDigitIntArray convert the value into an array of ints. Each characters is converted individually.
 func (s String) SingleDigitIntArray() []int {
 
 	result := make([]int, len(s))
