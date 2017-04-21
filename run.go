@@ -98,10 +98,6 @@ func RunFrom(r io.Reader, w io.Writer, factory ProblemFactory) {
 	pbCount := lines[0].Int()
 	log.Printf("INFO: %d problems\n", pbCount)
 
-	if (pbCount + 1) != iLineCount {
-		log.Fatalf("ERROR: Wrong lines count: %d read\n", iLineCount)
-	}
-
 	//Read pb data
 	data := make([]Problem, pbCount, pbCount)
 	cursor := 1
